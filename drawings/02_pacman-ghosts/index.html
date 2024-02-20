@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pacman ghosts</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="ghosts blinky">
+                <div class="eyes">
+                    <div class="eyesball right-eye">
+                        <div class="iris"></div>
+                    </div>
+                    <div class="eyesball left-eye">
+                        <div class="iris"></div>
+                    </div>
+                </div>
+                <div class="dot red pos-1"></div>
+                <div class="dot red pos-2"></div>
+                <div class="dot red pos-3"></div>
+                <div class="black-dot black-1"></div>
+                <div class="black-dot black-2"></div>
+            </div>
+            <div class="ghosts pinky">
+                <div class="eyes">
+                    <div class="eyesball right-eye">
+                        <div class="iris"></div>
+                    </div>
+                    <div class="eyesball left-eye">
+                        <div class="iris"></div>
+                    </div>
+                </div>
+                <div class="dot pink pos-1"></div>
+                <div class="dot pink pos-2"></div>
+                <div class="dot pink pos-3"></div>
+                <div class="black-dot black-1"></div>
+                <div class="black-dot black-2"></div>
+            </div>
+            <div class="ghosts inky">
+                <div class="eyes">
+                    <div class="eyesball right-eye">
+                        <div class="iris"></div>
+                    </div>
+                    <div class="eyesball left-eye">
+                        <div class="iris"></div>
+                    </div>
+                </div>
+                <div class="dot cyan pos-1"></div>
+                <div class="dot cyan pos-2"></div>
+                <div class="dot cyan pos-3"></div>
+                <div class="black-dot black-1"></div>
+                <div class="black-dot black-2"></div>
+            </div>
+            <div class="ghosts clyde">
+                <div class="eyes">
+                    <div class="eyesball right-eye">
+                        <div class="iris"></div>
+                    </div>
+                    <div class="eyesball left-eye">
+                        <div class="iris"></div>
+                    </div>
+                </div>
+                <div class="dot orange pos-1"></div>
+                <div class="dot orange pos-2"></div>
+                <div class="dot orange pos-3"></div>
+                <div class="black-dot black-1"></div>
+                <div class="black-dot black-2"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const wrapper = document.querySelector('.wrapper');
+        console.log(wrapper)
+        setTimeout(() => {
+            wrapper.classList.add('active');
+        }, 300);
+    </script>
+</body>
+
+</html>

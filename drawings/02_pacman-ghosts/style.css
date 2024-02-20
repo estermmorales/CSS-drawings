@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  background-color: rgb(18, 19, 35);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 20px;
+}
+
+.wrapper {
+  opacity: 0;
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper.active {
+  opacity: 1;
+  transition: opacity 0.2s ease-out;
+}
+
+.ghosts {
+  width: 210px;
+  height: 250px;
+  margin: 0 auto;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 8%;
+  border-bottom-right-radius: 8%;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.ghosts:hover {
+  transform: scale(1.02);
+}
+
+.ghosts.blinky {
+  background-color: #ff0000;
+}
+
+.ghosts.pinky {
+  background-color: #ffb8ff;
+}
+
+.ghosts.inky {
+  background-color: #00ffff;
+}
+
+.ghosts.clyde {
+  background-color: #ffb852;
+}
+
+.eyes {
+  position: relative;
+}
+
+.eyesball {
+  width: 55px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+
+.eyesball::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 28px;
+  background-color: rgb(82, 82, 226);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 12px;
+  /* left: 2px; */
+}
+
+.eyesball.right-eye {
+  left: 100px;
+}
+
+.dot {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.pos-1 {
+  bottom: -10px;
+}
+
+.pos-2 {
+  left: 80px;
+  bottom: -10px;
+}
+
+.pos-3 {
+  left: 160px;
+  bottom: -10px;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+.pink {
+  background-color: #ffb8ff;
+}
+
+.cyan {
+  background-color: #00ffff;
+}
+
+.orange {
+  background-color: #ffb852;
+}
+
+.black-dot {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(18, 19, 35);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -40px;
+  left: 40px;
+}
+
+.black-dot.black-2 {
+  left: 120px;
+}

@@ -1,0 +1,137 @@
+@import "./reset.css";
+
+body {
+  font-family: "Geist";
+  background: #f1eff7;
+  color: #202020;
+}
+
+header {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  font-size: 0.8rem;
+  padding-top: 12px;
+}
+
+nav {
+  margin-top: 12px;
+}
+
+nav a {
+  color: #888888;
+  font-size: 0.75rem;
+  text-decoration: none;
+  margin-right: 2px;
+}
+
+nav a:hover {
+  color: #5e5e5e;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  gap: 16px;
+  margin: 0 auto;
+}
+
+.card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 280px;
+  background: #f1eff7;
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.8);
+  border: 2px solid #202020;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  object-fit: cover;
+  border-bottom: 2px solid #202020;
+}
+
+.card > .content {
+  padding: 8px;
+  margin-top: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card > .content a {
+  text-decoration: none;
+  margin-top: 20px;
+  background: #d8d1ec;
+  color: #202020;
+  border: 2px solid #202020;
+  padding: 8px;
+  font-size: 0.8rem;
+}
+
+.card > .content a:hover {
+  text-decoration: underline;
+}
+
+.number {
+  position: absolute;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  background: #202020;
+  border-bottom: 2px solid #d8d1ec;
+  border-right: 2px solid #d8d1ec;
+  color: #f1eff7;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
